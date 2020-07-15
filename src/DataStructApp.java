@@ -1,7 +1,7 @@
 import DataStructures.List;
 import DataStructures.HashTable;
 
-public class Program {
+public class DataStructApp {
     public static void main(String[] args) {
         List l = new List();
         HashTable ht = new HashTable();
