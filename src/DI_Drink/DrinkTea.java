@@ -1,8 +1,14 @@
 package DI_Drink;
 
-public class DrinkTea implements IDrinkService {
+public class DrinkTea extends DrinkCoffee {
+
+  DrinkTea (String[] toppings) {
+    super(toppings);
+    super.drink = "tea";
+  }
+
   @Override
-  public void drink() {
-    System.out.println("Drink cup of tea...");
+  public void drink () {
+    super.drink();
   }
 }

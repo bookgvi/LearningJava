@@ -5,13 +5,26 @@ import DI_Drink.MyChoiceIsTea;
 
 public class DI_DrinkApp {
   public static void main (String[] args) {
-    IDrinkAction action = null;
+    String[] toppingsCommon = new String[]{"sugar"};
+    String[] toppingsGourmet = new String[]{"sugar", "milk"};
+    String[] toppingsCoffeeArab = new String[]{"sugar", "cardamom", "salt", "pepper"};
+    String[] toppingsEmpty = new String[]{};
+    IDrinkAction action;
 
-    IMakeChoice tea = new MyChoiceIsTea();
+    IMakeChoice tea = new MyChoiceIsTea(toppingsCommon);
     action = tea.makeChoice();
     action.process();
 
-    IMakeChoice coffee = new MyChoiceIsCoffee();
+    IMakeChoice coffee;
+    coffee = new MyChoiceIsCoffee(toppingsEmpty);
+    action = coffee.makeChoice();
+    action.process();
+
+    coffee = new MyChoiceIsCoffee(toppingsGourmet);
+    action = coffee.makeChoice();
+    action.process();
+
+    coffee = new MyChoiceIsCoffee(toppingsCoffeeArab);
     action = coffee.makeChoice();
     action.process();
   }
