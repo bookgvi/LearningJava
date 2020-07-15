@@ -1,5 +1,3 @@
-package InterfaceAsCallback;
-
 import DI_Click.ButtonClickAction;
 import DI_Click.IActionService;
 import DI_Click.IConsumerAction;
