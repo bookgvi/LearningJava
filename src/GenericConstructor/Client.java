@@ -1,8 +1,5 @@
 package GenericConstructor;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class Client<T, U, V> implements IClient {
   private String name = "-";
   private Short age = 0;
@@ -29,7 +26,7 @@ public class Client<T, U, V> implements IClient {
     return height;
   }
 
-  private <X> void setAttr(X a) {
+  public <X> void setAttr(X a) {
     if (a.getClass().toString().contains("String")) {
       name = (String) a;
     } else if (a.getClass().toString().contains("Short")) {

@@ -7,6 +7,8 @@ public class GenericConstructorApp {
     String name = "Bill";
     Integer height = 185;
     IClient person = new Client<>(age, name, name);
+    person.setAttr(height);
+    person.setAttr(name + " Willowson");
     System.out.println("Name: " + person.getName());
     System.out.println("Age: " + person.getAge());
     System.out.println("Height: " + person.getHeight());
