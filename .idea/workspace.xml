@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/StreamAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/StreamAPP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamAPP.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603123663990</updated>
       <workItem from="1603123665125" duration="1232000" />
-      <workItem from="1603125533192" duration="1121000" />
+      <workItem from="1603125533192" duration="4143000" />
     </task>
     <servers />
   </component>
