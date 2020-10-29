@@ -2,10 +2,11 @@ package InheritanceReflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
 public class Square extends Shape {
-  private String shapeClassField = "QQQ";
+  private final String shapeClassField = "QQQ";
 
   public String getSomeVar() {
     return this.someVar;
@@ -28,7 +29,12 @@ public class Square extends Shape {
     if (fields.length > 0) {
       Arrays.stream(fields).forEach(field -> {
         try {
-          System.out.printf("Name: %s, type: %s, value = %s%n", field.getName(), field.getType().getName(), field.get(obj));
+          System.out.printf("Name: %s, type: %s, modifiers: %s, value = %s%n",
+            field.getName(),
+            field.getType().getName(),
+            Modifier.toString(field.getModifiers()),
+            field.get(obj)
+          );
         } catch (Exception ignored) {
         }
       });
