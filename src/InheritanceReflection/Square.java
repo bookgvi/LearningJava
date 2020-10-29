@@ -1,4 +1,4 @@
-package Inheritance;
+package InheritanceReflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -11,7 +11,7 @@ public class Square extends Shape {
     return this.someVar;
   }
 
-  public void checkProperties() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+  public void checkProperties() throws ClassNotFoundException {
     Class<?> squareClass = Class.forName(Square.class.getName());
     Square square = this.createSquareObj(squareClass);
     Field[] declaredFields = squareClass.getDeclaredFields();
@@ -37,10 +37,14 @@ public class Square extends Shape {
     }
   }
 
-  private Square createSquareObj(Class<?> clazz) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+  private Square createSquareObj(Class<?> clazz) {
     Square square = null;
     Class[] params = new Class[] {};
-    square = (Square) clazz.getConstructor(params).newInstance();
+    try {
+      square = (Square) clazz.getConstructor(params).newInstance();
+    } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException e) {
+      e.printStackTrace();
+    }
     return square;
   }
 }

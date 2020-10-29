@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Inheritance/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inheritance/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceReflection/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inheritance/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceReflection/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InheritanceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceReflectionApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +64,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="StrteamAPP" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="InheritanceApp" />
+    <configuration name="APP" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="InheritanceReflectionApp" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,7 +151,7 @@
       <workItem from="1603129853620" duration="5000" />
       <workItem from="1603710335516" duration="2234000" />
       <workItem from="1603974241628" duration="616000" />
-      <workItem from="1603992860865" duration="2799000" />
+      <workItem from="1603992860865" duration="3318000" />
     </task>
     <servers />
   </component>
