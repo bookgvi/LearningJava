@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/DataStructApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/DataStructApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inheritance/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InheritanceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +149,8 @@
       <workItem from="1603125533192" duration="4250000" />
       <workItem from="1603129853620" duration="5000" />
       <workItem from="1603710335516" duration="2234000" />
-      <workItem from="1603974241628" duration="269000" />
+      <workItem from="1603974241628" duration="616000" />
+      <workItem from="1603992860865" duration="904000" />
     </task>
     <servers />
   </component>
