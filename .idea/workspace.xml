@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/InheritanceReflection/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/InheritanceReflection/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/InheritanceReflectionApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/InheritanceReflectionApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InheritanceReflection/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceReflection/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InheritanceReflectionApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InheritanceReflectionApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +48,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MultiThread" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -66,7 +67,7 @@
   </component>
   <component name="RunManager">
     <configuration name="APP" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="InheritanceReflectionApp" />
+      <option name="MAIN_CLASS_NAME" value="MultiThread" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,7 +153,10 @@
       <workItem from="1603129853620" duration="5000" />
       <workItem from="1603710335516" duration="2234000" />
       <workItem from="1603974241628" duration="616000" />
-      <workItem from="1603992860865" duration="4052000" />
+      <workItem from="1603992860865" duration="4750000" />
+      <workItem from="1604039953327" duration="32000" />
+      <workItem from="1604060722732" duration="24000" />
+      <workItem from="1604588620597" duration="1055000" />
     </task>
     <servers />
   </component>
