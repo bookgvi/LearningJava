@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiThread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread/MyThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +156,8 @@
       <workItem from="1603992860865" duration="4750000" />
       <workItem from="1604039953327" duration="32000" />
       <workItem from="1604060722732" duration="24000" />
-      <workItem from="1604588620597" duration="4637000" />
+      <workItem from="1604588620597" duration="5722000" />
+      <workItem from="1604648753764" duration="4010000" />
     </task>
     <servers />
   </component>

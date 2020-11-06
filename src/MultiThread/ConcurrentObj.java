@@ -8,11 +8,7 @@ public class ConcurrentObj {
   private ConcurrentHashMap<Integer, String> chm = new ConcurrentHashMap<>();
   private Map<Integer, String> hm = new HashMap<>();
 
-  public ConcurrentHashMap<Integer, String> getChm() {
-    return chm;
-  }
-
-  public Map<Integer, String> getHm() {
-    return hm;
+  public Map<Integer, String> getMap(boolean isConcurrentHashMap) {
+    return isConcurrentHashMap ? chm : hm;
   }
 }
