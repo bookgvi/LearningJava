@@ -1,7 +1,6 @@
 package MultiThread;
 
 import java.util.Map;
-import java.util.Objects;
 import java.util.Random;
 
 import static java.lang.Thread.sleep;
@@ -30,7 +29,7 @@ public class MyRunnable implements Runnable {
   }
 
   private void fillHashMap(int index, Map<Integer, String> map) throws InterruptedException {
-    if (index > ConcurrentObj.MAP_SIZE) return;
+    if (index > Definitions.MAP_SIZE) return;
     if (map.get(index) == null) {
       map.putIfAbsent(index, this.name);
       notifyAll();
@@ -39,7 +38,7 @@ public class MyRunnable implements Runnable {
   }
 
   private void concurrentFillHashMap(Map<Integer, String> map) throws InterruptedException {
-    int index = new Random().nextInt(ConcurrentObj.MAP_SIZE);
+    int index = new Random().nextInt(Definitions.MAP_SIZE);
     map.putIfAbsent(index, this.name);
     sleep(1);
   }

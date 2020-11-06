@@ -2,7 +2,6 @@ import MultiThread.*;
 
 import java.util.*;
 
-import static java.lang.Thread.sleep;
 
 public class MultiThread {
   private static final int THREAD_COUNT = 5;
@@ -17,25 +16,22 @@ public class MultiThread {
   }
 
   public static void main(String[] args) throws InterruptedException {
-    Random rnd = new Random();
     ThreadGroup threadGroup = new ThreadGroup("QQQ");
-    ConcurrentObj concurrentObj = new ConcurrentObj();
     List<MyRunnable> tasks = new ArrayList<>();
-    Map<Integer, String> map = concurrentObj.getMap(true);
+    Map<Integer, String> map = ConcurrentObj.getMap(true);
     Thread thread;
 
     for (int i = 1; i <= THREAD_COUNT; i++) {
       MyRunnable myRunnable = new MyRunnable(true, map);
       tasks.add(myRunnable);
-      String name = "myTread-" + i;
       thread = new Thread(threadGroup, myRunnable);
       thread.start();
     }
 
 
-    sleep(1000);
+    delay();
     System.out.printf("%nActive threads: %s%n", threadGroup.activeCount());
-    while (ConcurrentObj.MAP_SIZE - map.size() - 1 > 0) {
+    while (Definitions.MAP_SIZE - map.size() - 1 > 0) {
     }
     tasks.forEach(task -> task.setActive(false));
 
