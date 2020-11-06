@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class MyThread implements Runnable {
   private Map<Integer, String> map;
-  private String name;
+  private String name = Thread.currentThread().getName();
 
   public MyThread(ThreadGroup threadGroup, Map<Integer, String> map) {
     this.map = map;
@@ -19,14 +19,15 @@ public class MyThread implements Runnable {
 
   @Override
   public void run() {
-    System.out.printf("Created additional thread: %s%n", this.getName());
+    this.name = Thread.currentThread().getName();
+    System.out.printf("Created additional thread: %s%n", this.name);
     fillHashMap(0, map);
   }
 
   private void fillHashMap(int index, Map<Integer, String> map) {
     if (index > 4) return;
     if (map.get(index) == null) {
-      map.putIfAbsent(index, this.getName());
+      map.putIfAbsent(index, this.name);
     }
     fillHashMap(++index, map);
   }

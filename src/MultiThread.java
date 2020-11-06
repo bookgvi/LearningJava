@@ -24,17 +24,17 @@ public class MultiThread {
     Map<Integer, String> map = concurrentObj.getMap(true);
 
     Thread thread;
-    MyThread myThread = new MyThread(threadGroup, map);
     for (int i = 1; i <= THREAD_COUNT; i++) {
-      String name = "myTread" + i;
-      thread = new Thread(threadGroup, myThread, name);
-      myThread.setName(name);
+      String name = "myTread-" + i;
+      thread = new Thread(threadGroup, new MyThread(threadGroup, map));
+      thread.setName(name);
       thread.start();
       sleep(MultiThread.delay());
     }
+          sleep(MultiThread.delay());
     for (Object o : map.keySet()) {
       System.out.printf("%s ", map.get(o));
     }
-    System.out.println(threadGroup.activeCount());
+    System.out.printf("%nActive threads: %s%n", threadGroup.activeCount());
   }
 }
