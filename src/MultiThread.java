@@ -20,15 +20,15 @@ public class MultiThread {
     Random rnd = new Random();
     ThreadGroup threadGroup = new ThreadGroup("QQQ");
     ConcurrentObj concurrentObj = new ConcurrentObj();
-    List<MyThread> tasks = new ArrayList<>();
+    List<MyRunnable> tasks = new ArrayList<>();
     Map<Integer, String> map = concurrentObj.getMap(true);
     Thread thread;
 
     for (int i = 1; i <= THREAD_COUNT; i++) {
-      MyThread myThread = new MyThread(true, map);
-      tasks.add(myThread);
+      MyRunnable myRunnable = new MyRunnable(true, map);
+      tasks.add(myRunnable);
       String name = "myTread-" + i;
-      thread = new Thread(threadGroup, myThread);
+      thread = new Thread(threadGroup, myRunnable);
       thread.start();
     }
 

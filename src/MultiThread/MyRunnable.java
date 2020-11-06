@@ -7,12 +7,12 @@ import java.util.Random;
 import static java.lang.Thread.sleep;
 
 
-public class MyThread implements Runnable {
+public class MyRunnable implements Runnable {
   private Map<Integer, String> map;
   private String name = Thread.currentThread().getName();
   private boolean isActive = true;
 
-  public MyThread(boolean isActive, Map<Integer, String> map) {
+  public MyRunnable(boolean isActive, Map<Integer, String> map) {
     this.isActive = isActive;
     this.map = map;
   }

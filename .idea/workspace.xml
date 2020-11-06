@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/MultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/MultiThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/MultiThread/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/MultiThread/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiThread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
   </component>
   <component name="RunManager">
     <configuration name="APP" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="MultiThread" />
+      <option name="MAIN_CLASS_NAME" value="ExecutorThreads" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
