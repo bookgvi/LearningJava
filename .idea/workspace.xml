@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/production/LearningJava/MultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/LearningJava/MultiThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +69,7 @@
   </component>
   <component name="RunManager">
     <configuration name="APP" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ExecutorThreads" />
+      <option name="MAIN_CLASS_NAME" value="MultiThread" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,6 +160,12 @@
       <workItem from="1604060722732" duration="24000" />
       <workItem from="1604588620597" duration="5722000" />
       <workItem from="1604648753764" duration="12885000" />
+      <workItem from="1604688273518" duration="7000" />
+      <workItem from="1604689351915" duration="41000" />
+      <workItem from="1604932408408" duration="58000" />
+      <workItem from="1605034682916" duration="521000" />
+      <workItem from="1605038485029" duration="334000" />
+      <workItem from="1605513222671" duration="204000" />
     </task>
     <servers />
   </component>
