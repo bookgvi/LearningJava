@@ -42,5 +42,11 @@ public class StreamAPP {
         return numbersNotNull.get(index);
       })
       .forEach(System.out::print);
+
+    System.out.println();
+    counts.square(null);
+    System.out.println();
+    counts.optional();
+
   }
 }

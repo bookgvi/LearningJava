@@ -2,6 +2,7 @@ package StreamAPI;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -11,7 +12,7 @@ public class StreamAPI {
 
   public StreamAPI(int arraySize) {
     for(int item = 1; item <= arraySize; item++) {
-      intList.add(item);
+      intList.add(new Random().nextInt(10));
     }
   }
 
@@ -20,7 +21,12 @@ public class StreamAPI {
   }
 
   public void square(ArrayList<Integer> arr) {
-    IntStream stream = arr != null ? arr.stream().mapToInt(i -> i) : new Random().ints();
-    stream.map(i -> i*i).forEach(System.out::print);
+    IntStream stream = arr != null ? arr.stream().mapToInt(i -> i) : this.intList.stream().mapToInt(i -> i);
+    stream.map(i -> i*i).mapToObj(i -> i + " ").forEach(System.out::print);
+  }
+
+  public void optional() {
+    Optional optional = Optional.of(this.intList);
+    System.out.printf(String.valueOf(optional.isPresent()));
   }
 }
