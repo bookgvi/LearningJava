@@ -23,4 +23,15 @@ public class SocketCLient {
       }
     }
   }
+  public void request1(String str) {
+    try (
+      Socket socket = new Socket(SocketServer.ADDRESS, SocketServer.PORT);
+      OutputStreamWriter outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());
+      BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
+    ) {
+      bufferedWriter.write(str + " SIGNATURE");
+    } catch (IOException ex) {
+      ex.getStackTrace();
+    }
+  }
 }

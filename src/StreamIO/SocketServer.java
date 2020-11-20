@@ -7,12 +7,12 @@ import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class SocketServer {
+class SocketServer {
   final static int PORT = 9999;
   final static String ADDRESS = "127.0.0.1";
-  final String DEFAULT_FILE = "/Users/bookgvi/IdeaProjects/LearningJava/files/file1.txt";
+  private final String DEFAULT_FILE = "/Users/bookgvi/IdeaProjects/LearningJava/files/file1.txt";
 
-  public void listenConnection() {
+  void listenConnection() {
     ServerSocket serverSocket = null;
     FileWriter fileWriter = null;
     try {

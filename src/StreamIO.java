@@ -25,7 +25,7 @@ public class StreamIO {
       "there!!! \n" +
       "QWEE\n";
     SocketCLient socketCLient = new SocketCLient();
-    socketCLient.request(strForSend);
+    socketCLient.request1(strForSend);
 
     executorService.shutdown();
   }
