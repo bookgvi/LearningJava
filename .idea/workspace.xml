@@ -30,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,7 +85,7 @@
     <configuration name="APP" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="DateTime" />
+      <option name="MAIN_CLASS_NAME" value="StreamIO" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,6 +185,7 @@
       <workItem from="1605620986716" duration="264000" />
       <workItem from="1605805871009" duration="2785000" />
       <workItem from="1605866060236" duration="6000" />
+      <workItem from="1605875653854" duration="3326000" />
     </task>
     <servers />
   </component>
