@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class File implements FileIO {
-  private final int BUFFER_CAPACITY = 100;
+  private final int BUFFER_CAPACITY = 5;
 
   @Override
   public InputStream readByteStreamFromFile(String fileName) {
@@ -24,18 +24,11 @@ public class File implements FileIO {
 
   @Override
   public void writeToFile(String fileName, OutputStream outputStream) {
-    int i = 0;
-    ArrayList<Character> charBufExt = new ArrayList<>();
-    char[] charBuf = new char[BUFFER_CAPACITY];
     try(FileWriter fileWriter = new FileWriter(fileName)) {
       InputStreamReader systemInput = new InputStreamReader(System.in);
       BufferedReader bufferedReader = new BufferedReader(systemInput);
-      int buffeSize = bufferedReader.read(charBuf);
-      while(i < buffeSize) {
-        fileWriter.write(charBuf[i]);
-        System.out.printf("%s", charBuf[i]);
-        i++;
-      }
+      String str = bufferedReader.readLine();
+      fileWriter.write(str);
     } catch (IOException fileEx) {
       fileEx.printStackTrace();
     }
