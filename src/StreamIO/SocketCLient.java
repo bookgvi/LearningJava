@@ -9,8 +9,9 @@ public class SocketCLient {
     PrintWriter writer = null;
     try {
       socket = new Socket(SocketServer.ADDRESS, SocketServer.PORT);
-      writer = new PrintWriter(socket.getOutputStream(), true);
+      writer = new PrintWriter(socket.getOutputStream(), false);
       writer.println(str);
+      writer.flush();
     } catch (IOException socketEx) {
       socketEx.getStackTrace();
     } finally {
