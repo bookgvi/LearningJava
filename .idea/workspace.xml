@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StreamIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamIO.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,7 @@
     <configuration name="APP" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="StreamIO" />
+      <option name="MAIN_CLASS_NAME" value="XMLParser" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,7 +242,7 @@
       <workItem from="1607093434079" duration="2163000" />
       <workItem from="1607205735106" duration="252000" />
       <workItem from="1607243375230" duration="7000" />
-      <workItem from="1607250754347" duration="793000" />
+      <workItem from="1607250754347" duration="5440000" />
     </task>
     <servers />
   </component>
