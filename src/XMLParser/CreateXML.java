@@ -1,6 +1,5 @@
 package XMLParser;
 
-import StreamIO.File;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -18,17 +17,17 @@ public class CreateXML {
   private String XMLFileName;
   private FileOps fileOps;
 
-  public CreateXML() throws ParserConfigurationException {
+  public CreateXML() {
     fileOps = new FileOps();
     this.XMLFileName = DEFAULT_NAME;
   }
 
-  public CreateXML(String XMLFileName) throws ParserConfigurationException {
+  public CreateXML(String XMLFileName) {
     fileOps = new FileOps();
     this.XMLFileName = XMLFileName;
   }
 
-  public void createSimpleXML(String[] tags) throws FileNotFoundException, TransformerException {
+  public void createSimpleXML(String[] tags) {
     Document document = null;
     try {
       DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -52,13 +51,10 @@ public class CreateXML {
   }
 
   private class FileOps {
-    private final int BUFFER_SIZE = 8196;
-
     private FileOps() {
     }
 
     void saveXMLToFile(Document document) {
-      byte[] buffer = new byte[BUFFER_SIZE];
       try {
         FileOutputStream fos = new FileOutputStream(CreateXML.this.XMLFileName);
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
