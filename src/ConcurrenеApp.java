@@ -20,10 +20,21 @@ public class ConcurrenеApp {
 //      Thread.sleep(100);
 //    }
 
-    countDownLatch = new CountDownLatch(RIDERS_COUNT);
+    countDownLatch = new CountDownLatch(RIDERS_COUNT + 3);
     for (int i = 0; i < RIDERS_COUNT; i++) {
       new Thread(new CountDownLatchExample(i)).start();
       Thread.sleep(new Random().nextInt(500));
     }
+    if (countDownLatch.getCount() > 3) Thread.sleep(500);
+
+    System.out.print("На старт...\n");
+    Thread.sleep(new Random().nextInt(1500));
+    countDownLatch.countDown();
+    System.out.print("Внимание...\n");
+    Thread.sleep(new Random().nextInt(1500));
+    countDownLatch.countDown();
+    System.out.print("Марш...\n");
+    Thread.sleep(new Random().nextInt(1500));
+    countDownLatch.countDown();
   }
 }
