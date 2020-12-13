@@ -1,10 +1,12 @@
 import Concurrent.CyclicBarier.CyclicBarierExample;
+import Concurrent.Exchanger.ExchangerExample;
 import Concurrent.Semaphore.SemaphoreExample;
 import Concurrent.CountDownLatch.CountDownLatchExample;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.Exchanger;
 import java.util.concurrent.Semaphore;
 
 import static Concurrent.CountDownLatch.CountDownLatchExample.countDownLatch;
@@ -39,10 +41,14 @@ public class ConcurrentApp {
 //    Thread.sleep(new Random().nextInt(1500));
 //    countDownLatch.countDown();
 
-    CyclicBarierExample.cyclicBarrier = new CyclicBarrier(CyclicBarierExample.FERRY_BOAT_SIZE, new CyclicBarierExample.FerryBoat());
-    for (int i = 1; i <= CyclicBarierExample.CARS_COUNT; i++) {
-      Thread.sleep(400);
-      new Thread(new CyclicBarierExample.Car(i)).start();
-    }
+//    CyclicBarierExample.cyclicBarrier = new CyclicBarrier(CyclicBarierExample.FERRY_BOAT_SIZE, new CyclicBarierExample.FerryBoat());
+//    for (int i = 1; i <= CyclicBarierExample.CARS_COUNT; i++) {
+//      Thread.sleep(400);
+//      new Thread(new CyclicBarierExample.Car(i)).start();
+//    }
+
+    ExchangerExample.exchanger = new Exchanger<String>();
+    new Thread(new ExchangerExample.GetMsg()).start();
+    new Thread(new ExchangerExample.PutMsg()).start();
   }
 }
