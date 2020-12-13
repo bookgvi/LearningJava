@@ -1,8 +1,10 @@
+import Concurrent.CyclicBarier.CyclicBarierExample;
 import Concurrent.Semaphore.SemaphoreExample;
 import Concurrent.CountDownLatch.CountDownLatchExample;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
 import static Concurrent.CountDownLatch.CountDownLatchExample.countDownLatch;
@@ -20,21 +22,28 @@ public class ConcurrenеApp {
 //      Thread.sleep(100);
 //    }
 
-    countDownLatch = new CountDownLatch(RIDERS_COUNT + 3);
-    for (int i = 0; i < RIDERS_COUNT; i++) {
-      new Thread(new CountDownLatchExample(i)).start();
-      Thread.sleep(new Random().nextInt(500));
-    }
-    if (countDownLatch.getCount() > 3) Thread.sleep(500);
+//    countDownLatch = new CountDownLatch(RIDERS_COUNT + 3);
+//    for (int i = 0; i < RIDERS_COUNT; i++) {
+//      new Thread(new CountDownLatchExample(i)).start();
+//      Thread.sleep(new Random().nextInt(500));
+//    }
+//    if (countDownLatch.getCount() > 3) Thread.sleep(500);
+//
+//    System.out.print("На старт...\n");
+//    Thread.sleep(new Random().nextInt(1500));
+//    countDownLatch.countDown();
+//    System.out.print("Внимание...\n");
+//    Thread.sleep(new Random().nextInt(1500));
+//    countDownLatch.countDown();
+//    System.out.print("Марш...\n");
+//    Thread.sleep(new Random().nextInt(1500));
+//    countDownLatch.countDown();
 
-    System.out.print("На старт...\n");
-    Thread.sleep(new Random().nextInt(1500));
-    countDownLatch.countDown();
-    System.out.print("Внимание...\n");
-    Thread.sleep(new Random().nextInt(1500));
-    countDownLatch.countDown();
-    System.out.print("Марш...\n");
-    Thread.sleep(new Random().nextInt(1500));
-    countDownLatch.countDown();
+    CyclicBarierExample cyclicBarierExample = new CyclicBarierExample();
+    CyclicBarierExample.cyclicBarrier = new CyclicBarrier(CyclicBarierExample.FERRY_BOAT_SIZE, new CyclicBarierExample.FerryBoat());
+    for (int i = 1; i <= CyclicBarierExample.CARS_COUNT; i++) {
+      Thread.sleep(400);
+      new Thread(new CyclicBarierExample.Car(i)).start();
+    }
   }
 }
