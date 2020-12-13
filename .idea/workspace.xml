@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcurrenеApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrenеApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConcurrenеApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrentApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +137,7 @@
     <configuration name="APP" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ConcurrenеApp" />
+      <option name="MAIN_CLASS_NAME" value="ConcurrentApp" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,7 +245,7 @@
       <workItem from="1607243375230" duration="7000" />
       <workItem from="1607250754347" duration="6104000" />
       <workItem from="1607799736561" duration="3928000" />
-      <workItem from="1607847510343" duration="1117000" />
+      <workItem from="1607847510343" duration="1758000" />
     </task>
     <servers />
   </component>

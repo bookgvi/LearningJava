@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
 import static Concurrent.CountDownLatch.CountDownLatchExample.countDownLatch;
 import static Concurrent.Semaphore.SemaphoreExample.*;
 
-public class ConcurrenеApp {
+public class ConcurrentApp {
   public static void main(String[] args) throws InterruptedException {
     PLACES = new boolean[RIDERS_PLACES_COUNT];
     semaphore = new Semaphore(PLACES.length, true);
@@ -39,7 +39,6 @@ public class ConcurrenеApp {
 //    Thread.sleep(new Random().nextInt(1500));
 //    countDownLatch.countDown();
 
-    CyclicBarierExample cyclicBarierExample = new CyclicBarierExample();
     CyclicBarierExample.cyclicBarrier = new CyclicBarrier(CyclicBarierExample.FERRY_BOAT_SIZE, new CyclicBarierExample.FerryBoat());
     for (int i = 1; i <= CyclicBarierExample.CARS_COUNT; i++) {
       Thread.sleep(400);
