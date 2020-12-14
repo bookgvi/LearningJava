@@ -1,6 +1,7 @@
 import Concurrent.CyclicBarier.CyclicBarierExample;
 import Concurrent.Exchanger.ExchangerExample;
 import Concurrent.Phaser.PhaserExample;
+import Concurrent.Semaphore.SemaphoreDeadLock;
 import Concurrent.Semaphore.SemaphoreExample;
 import Concurrent.CountDownLatch.CountDownLatchExample;
 
@@ -13,7 +14,7 @@ import static Concurrent.Phaser.PhaserExample.*;
 import static Concurrent.Semaphore.SemaphoreExample.*;
 
 public class ConcurrentApp {
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws Exception {
     PLACES = new boolean[RIDERS_PLACES_COUNT];
     semaphore = new Semaphore(PLACES.length, true);
 //    for (int i = 0; i < RIDERS_PLACES_COUNT; i++) {
@@ -51,38 +52,41 @@ public class ConcurrentApp {
 //    new Thread(new ExchangerExample.GetMsg()).start();
 //    new Thread(new ExchangerExample.PutMsg()).start();
 
-    train = new Phaser(1);
-    ArrayList<PhaserExample.Passenger> passengers = new ArrayList<>();
-    for(int i = 1; i <= PASSENGERS_COUNT; i++) {
-      int dep = new Random().nextInt(STATIONS_COUNT);
-      if (dep == 0) dep++;
-      int dest = new Random().nextInt(STATIONS_COUNT - dep) + dep;
-      passengers.add(new PhaserExample.Passenger(i, dep, dest));
-    }
+//    train = new Phaser(1);
+//    ArrayList<PhaserExample.Passenger> passengers = new ArrayList<>();
+//    for(int i = 1; i <= PASSENGERS_COUNT; i++) {
+//      int dep = new Random().nextInt(STATIONS_COUNT);
+//      if (dep == 0) dep++;
+//      int dest = new Random().nextInt(STATIONS_COUNT - dep) + dep;
+//      passengers.add(new PhaserExample.Passenger(i, dep, dest));
+//    }
+//
+//    for(int i = 0; i <= STATIONS_COUNT; i++) {
+//      switch (i) {
+//        case 0:
+//          System.out.println("Поезд вышел из депо...");
+//          train.arrive();
+//          break;
+//        case 7:
+//          System.out.println("Поезд вернулся в депо...");
+//          train.arriveAndDeregister();
+//          break;
+//        default:
+//          int currentStation = train.getPhase();
+//          System.out.printf("Станция %s%n", currentStation);
+//          for (Passenger passenger: passengers) {
+//            if (passenger.getDeparture() == currentStation) {
+//              train.register();
+//              new Thread(passenger).start();
+//            }
+//          }
+//          train.arriveAndAwaitAdvance();
+//          System.out.println("Осторожно двери закрыватся");
+//          break;
+//      }
+//    }
 
-    for(int i = 0; i <= STATIONS_COUNT; i++) {
-      switch (i) {
-        case 0:
-          System.out.println("Поезд вышел из депо...");
-          train.arrive();
-          break;
-        case 7:
-          System.out.println("Поезд вернулся в депо...");
-          train.arriveAndDeregister();
-          break;
-        default:
-          int currentStation = train.getPhase();
-          System.out.printf("Станция %s%n", currentStation);
-          for (Passenger passenger: passengers) {
-            if (passenger.getDeparture() == currentStation) {
-              train.register();
-              new Thread(passenger).start();
-            }
-          }
-          train.arriveAndAwaitAdvance();
-          System.out.println("Осторожно двери закрыватся");
-          break;
-      }
-    }
+    SemaphoreDeadLock semaphoreDeadLock = new SemaphoreDeadLock();
+    SemaphoreDeadLock.runme();
   }
 }
