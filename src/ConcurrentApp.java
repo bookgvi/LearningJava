@@ -1,3 +1,4 @@
+import Concurrent.AtomicClasses.SequenceGenerator;
 import Concurrent.CyclicBarier.CyclicBarierExample;
 import Concurrent.Exchanger.ExchangerExample;
 import Concurrent.Phaser.PhaserExample;
@@ -86,7 +87,10 @@ public class ConcurrentApp {
 //      }
 //    }
 
-    SemaphoreDeadLock semaphoreDeadLock = new SemaphoreDeadLock();
-    SemaphoreDeadLock.runme();
+//    SemaphoreDeadLock semaphoreDeadLock = new SemaphoreDeadLock();
+//    SemaphoreDeadLock.runme();
+
+    SequenceGenerator sequenceGenerator = new SequenceGenerator();
+    sequenceGenerator.runMe();
   }
 }
