@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Concurrent/Phaser/PhaserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Concurrent/Phaser/PhaserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcurrentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrentApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiThread/MyExecutors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread/MyExecutors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patterns/Singleton/SingletonEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Singleton/SingletonEnum.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +213,7 @@
       <workItem from="1608273965456" duration="1420000" />
       <workItem from="1608542374339" duration="1127000" />
       <workItem from="1609265901011" duration="17000" />
-      <workItem from="1609265948393" duration="1725000" />
+      <workItem from="1609265948393" duration="2417000" />
     </task>
     <servers />
   </component>
