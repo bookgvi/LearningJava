@@ -3,7 +3,7 @@ package Patterns.Singleton;
 import java.io.Serializable;
 
 public final class Singleton implements Serializable {
-  public static Singleton INSTANCE;
+  static volatile Singleton INSTANCE;
   private String info = "This is Singleton.class";
 
   private Singleton() {
@@ -11,7 +11,9 @@ public final class Singleton implements Serializable {
 
   public static Singleton getInstance() {
     if (Singleton.INSTANCE == null) {
-      Singleton.INSTANCE = new Singleton();
+      synchronized (Singleton.class) {
+        if (Singleton.INSTANCE == null) Singleton.INSTANCE = new Singleton();
+      }
     }
     return Singleton.INSTANCE;
   }
