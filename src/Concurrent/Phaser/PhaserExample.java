@@ -2,11 +2,44 @@ package Concurrent.Phaser;
 
 import java.util.Random;
 import java.util.concurrent.Phaser;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
 
-public class PhaserExample {
+public class PhaserExample implements Lock {
   public static Phaser train;
   public static int PASSENGERS_COUNT = 10;
   public static int STATIONS_COUNT = 7;
+
+  @Override
+  public void lock() {
+
+  }
+
+  @Override
+  public void lockInterruptibly() throws InterruptedException {
+
+  }
+
+  @Override
+  public boolean tryLock() {
+    return false;
+  }
+
+  @Override
+  public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
+    return false;
+  }
+
+  @Override
+  public void unlock() {
+
+  }
+
+  @Override
+  public Condition newCondition() {
+    return null;
+  }
 
   public static class Passenger implements Runnable {
     private int id;

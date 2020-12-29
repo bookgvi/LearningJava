@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Concurrent/Phaser/PhaserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Concurrent/Phaser/PhaserExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConcurrentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrentApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiThread/MyExecutors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThread/MyExecutors.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +75,11 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Patterns.Singleton" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Patterns.Singleton" />
       <recent name="Polymorphism" />
       <recent name="MultiThread" />
     </key>
@@ -91,9 +98,9 @@
   </component>
   <component name="RunManager">
     <configuration name="APP" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ConcurrentApp" />
+      <option name="MAIN_CLASS_NAME" value="Patterns" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,6 +211,12 @@
       <workItem from="1607847510343" duration="6849000" />
       <workItem from="1607947754396" duration="7761000" />
       <workItem from="1608137995401" duration="1766000" />
+      <workItem from="1608198702483" duration="757000" />
+      <workItem from="1608214569642" duration="1098000" />
+      <workItem from="1608273965456" duration="1420000" />
+      <workItem from="1608542374339" duration="1127000" />
+      <workItem from="1609265901011" duration="17000" />
+      <workItem from="1609265948393" duration="1725000" />
     </task>
     <servers />
   </component>

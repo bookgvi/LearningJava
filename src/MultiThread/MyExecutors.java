@@ -5,14 +5,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class MyExecutors {
 
   public MyExecutors() {
+    Object s = new int[]{1, 2};
+    int i2;
+    String s1 = (String) new Object();
+    s1 = "QQQ";
+    s = "QQQ";
+//    i2 = "QQQ";
+    Executor ex = Executors.newFixedThreadPool(10);
     ExecutorService executor = Executors.newFixedThreadPool(Definitions.MAX_THREADS);
     MultiThread.MyCallable myCallable = new MyCallable();
     List<Future<String>> futures = new ArrayList<>();

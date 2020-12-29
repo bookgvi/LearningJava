@@ -90,7 +90,14 @@ public class ConcurrentApp {
 //    SemaphoreDeadLock semaphoreDeadLock = new SemaphoreDeadLock();
 //    SemaphoreDeadLock.runme();
 
-    SequenceGenerator sequenceGenerator = new SequenceGenerator();
-    sequenceGenerator.runMe();
+//    SequenceGenerator sequenceGenerator = new SequenceGenerator();
+//    sequenceGenerator.runMe();
+
+    final int a = -26;
+    final int b = -a;
+//    System.out.println(a);
+    System.out.println(a & 1);
+//    System.out.println(b);
+    System.out.println(b & 1);
   }
 }

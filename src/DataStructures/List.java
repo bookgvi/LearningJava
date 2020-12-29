@@ -1,8 +1,13 @@
 package DataStructures;
 
+import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.TreeMap;
 
 public class List {
+    TreeMap tm;
+    HashMap hm;
     ArrayList<String> list;
 
     public List() {
