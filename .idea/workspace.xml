@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patterns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Patterns/Singleton/SingletonEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Singleton/SingletonEnum.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,7 +214,11 @@
       <workItem from="1608273965456" duration="1420000" />
       <workItem from="1608542374339" duration="1127000" />
       <workItem from="1609265901011" duration="17000" />
-      <workItem from="1609265948393" duration="2417000" />
+      <workItem from="1609265948393" duration="3119000" />
+      <workItem from="1609405459322" duration="5000" />
+      <workItem from="1609923542848" duration="333000" />
+      <workItem from="1610704142140" duration="20000" />
+      <workItem from="1610704638202" duration="319000" />
     </task>
     <servers />
   </component>
