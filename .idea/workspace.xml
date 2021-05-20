@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa9031e9-cc02-4b76-9a6d-3c3b62e91022" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Threads/Threads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <recent name="MultiThread" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadsPool">
+  <component name="RunManager" selected="Application.APP">
     <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -152,7 +152,7 @@
     <configuration name="APP" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Patterns" />
+      <option name="MAIN_CLASS_NAME" value="ClassLoader" />
       <module name="LearningJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +171,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.ThreadsPool" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Application.APP" />
+      <item itemvalue="Application.Threads" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
